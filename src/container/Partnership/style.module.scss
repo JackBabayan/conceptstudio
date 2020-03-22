@@ -1,0 +1,159 @@
+@import "../../assets/Style/main.scss";
+
+.Container{
+    counter-reset: numb-counter;
+}
+
+.Count{
+    margin-top: -65px;
+    margin-bottom: -100px;
+    &:before{
+        content: counter(numb-counter, decimal-leading-zero);
+        counter-increment: numb-counter;
+        @include font(268, 1.1, 0, 700, uppercase, $CeraPro);
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: $blu;
+        text-shadow: 0 0 47px rgba(0, 226, 255, 0.04);
+    }
+}
+
+.Item{
+    margin-bottom: 30px;
+}
+
+.Information{
+    margin-bottom: 30px;
+}
+
+.Title{
+    @include font(20, 1.1, $blu, 700, uppercase, $CeraPro);
+    margin-bottom: 10px;
+    margin-left: -5px;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .PartnershipContainer{
+        justify-content: flex-end;
+    }
+
+    .Information{
+        .Title{
+            margin-bottom: 30px;
+        }
+    }
+
+    .Count{
+        &:before{
+            font-size: 280px;
+        }
+    }
+
+    .Information{
+        max-width: 71.5%;
+        margin-bottom: 45px;
+    }
+
+    .Item{
+        margin-bottom: 50px;
+    }
+
+    .Container{
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            top: 214px;
+            bottom: 5px;
+            left: -11px;
+            border-left: 1px solid rgba(0, 226, 255, 0.15);
+        }
+    }
+    
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+
+    .PartnershipContainer{
+        position: relative;
+    }
+
+    .Information{
+        max-width: 90%;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 40px;
+    }
+
+    .Item{
+        margin-bottom: 100px;
+    }
+    
+    .Container{
+        margin-top: 200px;
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+
+    .PartnershipContainer{
+        justify-content:space-between;
+    }
+
+    .Container{
+        margin-right: -56%;
+        &:after {
+            top: 277px;
+            left: -15px;
+        }
+    }
+
+    .Title{
+        font-size: 30px;
+    }
+
+    .Count{
+        margin-top: -30px;
+        margin-bottom: -100px;
+        margin-left: -125px;
+        &:before{
+            font-size: 298px;
+        }
+    }
+    
+}
+
+
+@media only screen and (min-width:1920px) {
+
+
+    .Information{
+        .Title{
+            margin-bottom: 100px;
+        }
+    }
+
+    .Container{
+        margin-top: 240px;
+        &:after {
+            top: 331px;
+            left: -24px;
+        }
+    }
+
+    .Title{
+        font-size: 36px;
+    }
+
+    .Count{
+        margin-left: -160px;
+        &:before{
+            font-size: 355px;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+$blu: #00E2FF;
+
+
+
+$CeraPro:'CeraPro','Segoe UI', 'Roboto';
+$baseFontSize : 14;
+
+    
+@font-face {
+    font-family: "CeraPro";
+    font-display: swap;
+    src: url('../font/CeraPro-Light.woff2') format('woff2'),
+    url('../font/CeraPro-Light.woff') format('woff');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "CeraPro";
+    font-display: swap;
+    src: url('../font/CeraPro-Regular.woff2') format('woff2'),
+    url('../font/CeraPro-Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "CeraPro";
+    font-display: swap;
+    src: url('../font/CeraPro-Regular.woff2') format('woff2'),
+    url('../font/CeraPro-Regular.woff') format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "CeraPro";
+    font-display: swap;
+    src: url('../font/CeraPro-Bold.woff2') format('woff2'),
+    url('../font/CeraPro-Bold.woff') format('woff');
+    font-weight: 700;
+}
+ 
+    

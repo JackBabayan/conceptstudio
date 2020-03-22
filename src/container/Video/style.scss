@@ -1,0 +1,29 @@
+@import "../../assets/Style/main.scss";
+
+.VideoContainer{
+    position: relative;
+    padding: 30%;
+    iframe{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -8px;
+        left:  -8px;
+        border: 0;
+        width: calc(100% + 16px);
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .VideoContainer{
+        iframe{
+            right: -11px;
+            left:  -11px;
+            width: calc(100% + 22px);
+        }
+    }
+
+
+}

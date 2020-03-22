@@ -1,0 +1,71 @@
+@import "../../assets/Style/main.scss";
+
+header{
+    padding: 20px 0;
+}
+
+.Menu{
+    margin-top: -10px;
+    counter-reset: my-sec-counter;
+    ul{
+        margin-top: 12px ;
+        margin-bottom: 0;
+        padding-left: 0px;
+    }
+    li{
+        list-style: none;
+        display: block;
+        margin-bottom: 16px;
+        a{
+            @include font(16, 0.8, white, 500,0,$CeraPro);
+        }
+        &:before{
+            content: counter(my-sec-counter, decimal-leading-zero) "."; 
+            counter-increment: my-sec-counter;
+            @include font(26, 0.7, $blu, 700,0,$CeraPro);
+            -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: $blu;
+            margin-right: 10px;
+            text-shadow: 0 0 14px rgba(0, 226, 255, 0.47);
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    header {
+        padding: 30px 0;
+    }
+
+    .Menu{
+        li{
+            &:before{
+                margin-right: 22px;
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 1440px) {
+
+    .Logo{
+        margin-left: -111px;
+        img{
+            width: 140px;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1920px) {
+
+    .Logo{
+        margin-left: -200px;
+    }
+}

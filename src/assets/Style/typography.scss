@@ -1,0 +1,91 @@
+@import "./fonts-scss.scss";
+@import "./mixins";
+@import "./extends";
+
+
+.Margin-Bottom{
+    margin-bottom: 100px;
+}
+
+.Parallax{
+    margin: 0;
+}
+
+.Title{
+    @include font(32, 1.1, white, 700, uppercase, $CeraPro);
+    letter-spacing: 3.8px;
+    margin-bottom: 15px;
+}
+
+.Text {
+    @include font(16, 1.5, white, 400, 0, $CeraPro);
+    p{
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+.LightText {
+    @include font(16, 1.5, white, 300, 0, $CeraPro);
+}
+
+
+@media only screen and (min-width: 768px) {
+
+        
+    .Margin-Bottom{
+        margin-bottom: 115px;
+    }
+
+    .Title {
+        font-size: 48px;
+    }
+
+    .Text {
+        p{
+            margin-bottom: 25px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+        
+    .Margin-Bottom{
+        margin-bottom: 175px;
+    }
+
+    .Title{
+        font-size: 64px;
+    }
+        
+    .Text {
+        font-size: 18px;
+        p{
+            margin-bottom: 35px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1920px) {
+
+          
+    .Margin-Bottom{
+        margin-bottom: 200px;
+    }
+
+    .Title{
+        font-size: 84px;
+    }
+
+    .Text {
+        font-size: 20px;
+        p{
+            margin-bottom: 45px;
+        }
+    }
+
+}

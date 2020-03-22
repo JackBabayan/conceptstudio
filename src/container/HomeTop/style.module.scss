@@ -1,0 +1,139 @@
+@import "../../assets/Style/main.scss";
+
+.Container{
+    margin-top: 215px;
+}
+
+.SubTitle{
+    max-width: 60%;
+    @include font(24, 1.3,white, 500,uppercase,$CeraPro);
+    margin-bottom: 3px;
+    letter-spacing: 2.4px;
+}
+
+.Title{
+    @include font(32, 1.1,white, 700,uppercase,$CeraPro);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $blu;
+    letter-spacing: 3.3px;
+    text-shadow: 0 0 14px rgba(0, 226, 255, 0.40);
+}
+
+.Info{
+    margin-bottom: 28px;
+}
+
+// .animation{
+//     span{
+//         opacity: 0.3;
+//         @include transition(all, 0.4s, ease-in-out);
+//     }
+//     &.active{
+//         opacity: 0.3;
+//     }
+// }
+
+.active{
+    animation-name: animation;
+}
+
+@keyframes animation {
+    0% {
+        opacity: 0.3;
+    }
+    20% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    60% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+
+@media only screen and (min-width: 768px) {
+
+    .Container{
+        margin-top: 230px;
+    }
+
+    .SubTitle{
+       font-size: 36px;
+    }
+
+    .Title{
+        font-size: 48px;
+    }
+
+    .Info{
+        margin-bottom: 75px;
+    }
+
+    .VideoContainer{
+        iframe{
+            right: -11px;
+            left:  -11px;
+            width: calc(100% + 22px);
+        }
+    }
+
+    .Info{
+        max-width: 65%;
+    }
+    
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    .Container{
+        margin-top: 20px;
+    }
+
+    .SubTitle{
+        margin-bottom: 5px;
+    }
+
+    .Info{
+        max-width: 80%;
+    }
+    
+}
+
+@media only screen and (min-width: 1440px) {
+
+ 
+    .SubTitle{
+        font-size: 46px;
+        margin-bottom: 15px;
+     }
+ 
+     .Title{
+        font-size: 64px;
+     }
+ 
+ }
+
+
+ @media only screen and (min-width: 1920px) {
+
+ 
+    .SubTitle{
+        font-size: 54px;
+     }
+ 
+     .Title{
+        font-size: 84px;
+     }
+ 
+ }
